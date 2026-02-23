@@ -1,0 +1,701 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLuxe | Premium Travel & Tourism</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top glass-panel flex-column p-0">
+        <!-- Top Announcement Bar -->
+        <div class="w-100 bg-dark text-white text-center py-2 small fw-bold">
+            Free shipping on orders over $50! <a href="#" class="text-warning text-decoration-underline ms-2">Shop
+                Now</a>
+        </div>
+        <!-- Main Navbar -->
+        <div class="container py-3 align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand me-4 d-flex align-items-center gap-2" href="Home1.html">
+                <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="38"
+                    style="object-fit: contain;">
+                <span class="fw-bolder fs-4 text-gradient">WanderLuxe</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Context -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="Home1.html">Home 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="Home2.html">Home 2</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" id="shopDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu p-4 border-0 shadow-xl rounded-4 mt-3" aria-labelledby="shopDropdown"
+                            style="min-width: 300px;">
+                            <li>
+                                <h6 class="dropdown-header text-primary fw-bold mb-2">Shop Categories</h6>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-3 py-2 rounded category-hover"
+                                    href="category.html">
+                                    <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                        alt="Electronics" class="rounded shadow-sm object-fit-cover"
+                                        style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-dark">Electronics</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-3 py-2 rounded category-hover"
+                                    href="category.html">
+                                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                        alt="Fashion" class="rounded shadow-sm object-fit-cover"
+                                        style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-dark">Fashion</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-3 py-2 rounded category-hover"
+                                    href="category.html">
+                                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                        alt="Home & Living" class="rounded shadow-sm object-fit-cover"
+                                        style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-dark">Home & Living</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider my-2">
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 fw-bold text-danger d-flex align-items-center gap-2 rounded category-hover"
+                                    href="#">
+                                    <i class="bi bi-percent fs-5"></i> Special Offers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="about.html">About</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <!-- Search Bar -->
+                    <form class="position-relative d-none d-lg-block me-2" style="width: 280px;">
+                        <input class="form-control rounded-pill pe-5 bg-light border-0 py-2" type="search"
+                            placeholder="Search products, brands..." aria-label="Search">
+                        <button class="btn position-absolute top-50 end-0 translate-middle-y text-muted border-0"
+                            type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="bi bi-moon-fill" style="pointer-events: none;"></i>
+                    </button>
+
+                    <!-- Cart -->
+                    <a href="#" class="position-relative me-3 text-decoration-none shadow-sm p-2 rounded-circle border"
+                        style="color: var(--text-color);" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"
+                        aria-controls="cartOffcanvas">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 0.65rem;">
+                            3
+                        </span>
+                    </a>
+
+                    <!-- Auth Dropdown -->
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-decoration-none" id="userDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm"
+                                style="width: 38px; height: 38px; border: 2px solid white;">
+                                U
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg rounded-4 mt-2"
+                            aria-labelledby="userDropdown">
+                            <li>
+                                <h6 class="dropdown-header fw-bold">My Account</h6>
+                            </li>
+                            <li><a class="dropdown-item py-2" href="login.html"><i
+                                        class="bi bi-box-arrow-in-right me-2"></i> Login</a></li>
+                            <li><a class="dropdown-item py-2" href="signup.html"><i class="bi bi-person-plus me-2"></i>
+                                    Sign Up</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="dashboard.html"><i
+                                        class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Header -->
+    <section class="category-header bg-dark text-white position-relative overflow-hidden" style="padding: 6rem 0;">
+        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Electronics Category" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25"
+            style="mix-blend-mode: luminosity;">
+        <div class="container position-relative z-1 text-center">
+            <h1 class="display-4 fw-bold mb-3">Electronics Collection</h1>
+            <p class="lead mb-0 text-light mx-auto" style="max-width: 600px;">Explore our premium selection of the
+                latest gadgets, devices, and cutting-edge technology designed to elevate your life.</p>
+        </div>
+    </section>
+
+    <!-- Category Content -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 sticky-top" style="top: 100px; z-index: 10;">
+                        <h5 class="fw-bold mb-4">Filters</h5>
+
+                        <!-- Categories -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-3">Subcategories</h6>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input text-primary" type="checkbox" value="" id="sub1"
+                                        checked>
+                                    <label class="form-check-label text-muted" for="sub1">Laptops (45)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-primary" type="checkbox" value="" id="sub2">
+                                    <label class="form-check-label text-muted" for="sub2">Smartphones (82)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-primary" type="checkbox" value="" id="sub3">
+                                    <label class="form-check-label text-muted" for="sub3">Audio & Headphones
+                                        (23)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-primary" type="checkbox" value="" id="sub4">
+                                    <label class="form-check-label text-muted" for="sub4">Accessories (120)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Range (Visual only) -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-3">Price Range</h6>
+                            <input type="range" class="form-range" id="priceRange">
+                            <div class="d-flex justify-content-between text-muted small mt-2">
+                                <span>$0</span>
+                                <span>$2,000+</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary w-100 fw-bold rounded-pill shadow-sm">Apply Filters</button>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="col-lg-9">
+                    <!-- Toolbar -->
+                    <div
+                        class="d-flex justify-content-between align-items-center mb-4 bg-white p-3 rounded-4 shadow-sm">
+                        <p class="mb-0 text-muted"><span class="fw-bold text-dark">150</span> Products Found</p>
+                        <select class="form-select border-0 bg-light w-auto rounded-pill px-4 text-muted"
+                            aria-label="Sort">
+                            <option selected>Sort by Relevance</option>
+                            <option value="1">Price: Low to High</option>
+                            <option value="2">Price: High to Low</option>
+                            <option value="3">Newest Arrivals</option>
+                        </select>
+                    </div>
+
+                    <div class="row g-4 mb-5">
+                        <!-- Product 1 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="custom-card p-0 overflow-hidden h-100 position-relative group-hover">
+                                <div class="position-absolute top-0 start-0 m-3 z-2 d-flex flex-column gap-2">
+                                    <span class="badge bg-danger rounded-pill shadow-sm px-2 py-1"
+                                        style="font-size: 0.7rem;">-20%</span>
+                                </div>
+                                <div class="position-absolute top-0 end-0 m-3 z-2 d-flex flex-column gap-2 action-buttons"
+                                    style="opacity: 0; transform: translateX(10px); transition: var(--transition);">
+                                    <button
+                                        class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"><i
+                                            class="bi bi-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"
+                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                            class="bi bi-eye"></i></button>
+                                </div>
+                                <div class="image-zoom-container bg-light" style="height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Product"
+                                        class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                </div>
+                                <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
+                                    <div class="text-muted small mb-1">Electronics</div>
+                                    <h6 class="mb-2 fw-bold text-truncate"><a href="#"
+                                            class="text-dark text-decoration-none">Smart Watch Series 7</a></h6>
+                                    <div class="d-flex align-items-center gap-2 mb-3">
+                                        <h5 class="mb-0 fw-bold text-primary">$299.00</h5>
+                                        <span class="text-muted text-decoration-line-through small">$350.00</span>
+                                    </div>
+                                    <button
+                                        class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                            class="bi bi-cart-plus me-2"></i> Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="custom-card p-0 overflow-hidden h-100 position-relative group-hover">
+                                <div class="position-absolute top-0 end-0 m-3 z-2 d-flex flex-column gap-2 action-buttons"
+                                    style="opacity: 0; transform: translateX(10px); transition: var(--transition);">
+                                    <button
+                                        class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"><i
+                                            class="bi bi-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"
+                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                            class="bi bi-eye"></i></button>
+                                </div>
+                                <div class="image-zoom-container bg-light" style="height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Product"
+                                        class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                </div>
+                                <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
+                                    <div class="text-muted small mb-1">Audio</div>
+                                    <h6 class="mb-2 fw-bold text-truncate"><a href="#"
+                                            class="text-dark text-decoration-none">Noise Cancelling Headphones</a></h6>
+                                    <h5 class="mb-3 fw-bold text-primary">$149.50</h5>
+                                    <button
+                                        class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                            class="bi bi-cart-plus me-2"></i> Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="custom-card p-0 overflow-hidden h-100 position-relative group-hover">
+                                <div class="position-absolute top-0 end-0 m-3 z-2 d-flex flex-column gap-2 action-buttons"
+                                    style="opacity: 0; transform: translateX(10px); transition: var(--transition);">
+                                    <button
+                                        class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"><i
+                                            class="bi bi-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"
+                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                            class="bi bi-eye"></i></button>
+                                </div>
+                                <div class="image-zoom-container bg-light" style="height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Product"
+                                        class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                </div>
+                                <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
+                                    <div class="text-muted small mb-1">Wearables</div>
+                                    <h6 class="mb-2 fw-bold text-truncate"><a href="#"
+                                            class="text-dark text-decoration-none">Apple Watch Series 6</a></h6>
+                                    <h5 class="mb-3 fw-bold text-primary">$399.00</h5>
+                                    <button
+                                        class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                            class="bi bi-cart-plus me-2"></i> Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="custom-card p-0 overflow-hidden h-100 position-relative group-hover">
+                                <span
+                                    class="badge position-absolute top-0 start-0 m-3 z-2 bg-success rounded-pill shadow-sm px-2 py-1"
+                                    style="font-size: 0.7rem;">NEW</span>
+                                <div class="position-absolute top-0 end-0 m-3 z-2 d-flex flex-column gap-2 action-buttons"
+                                    style="opacity: 0; transform: translateX(10px); transition: var(--transition);">
+                                    <button
+                                        class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"><i
+                                            class="bi bi-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"
+                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                            class="bi bi-eye"></i></button>
+                                </div>
+                                <div class="image-zoom-container bg-light" style="height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Product"
+                                        class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                </div>
+                                <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
+                                    <div class="text-muted small mb-1">Computers</div>
+                                    <h6 class="mb-2 fw-bold text-truncate"><a href="#"
+                                            class="text-dark text-decoration-none">Professional Laptop Pro</a></h6>
+                                    <h5 class="mb-3 fw-bold text-primary">$1,299.00</h5>
+                                    <button
+                                        class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                            class="bi bi-cart-plus me-2"></i> Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="custom-card p-0 overflow-hidden h-100 position-relative group-hover">
+                                <div class="position-absolute top-0 end-0 m-3 z-2 d-flex flex-column gap-2 action-buttons"
+                                    style="opacity: 0; transform: translateX(10px); transition: var(--transition);">
+                                    <button
+                                        class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"><i
+                                            class="bi bi-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"
+                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                            class="bi bi-eye"></i></button>
+                                </div>
+                                <div class="image-zoom-container bg-light" style="height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Product"
+                                        class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                </div>
+                                <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
+                                    <div class="text-muted small mb-1">Accessories</div>
+                                    <h6 class="mb-2 fw-bold text-truncate"><a href="#"
+                                            class="text-dark text-decoration-none">Gaming Headset Pro V2</a></h6>
+                                    <h5 class="mb-3 fw-bold text-primary">$79.00</h5>
+                                    <button
+                                        class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                            class="bi bi-cart-plus me-2"></i> Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="custom-card p-0 overflow-hidden h-100 position-relative group-hover">
+                                <div class="position-absolute top-0 end-0 m-3 z-2 d-flex flex-column gap-2 action-buttons"
+                                    style="opacity: 0; transform: translateX(10px); transition: var(--transition);">
+                                    <button
+                                        class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"><i
+                                            class="bi bi-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle shadow-sm p-2 text-muted hover-primary"
+                                        data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                            class="bi bi-eye"></i></button>
+                                </div>
+                                <div class="image-zoom-container bg-light" style="height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Product"
+                                        class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                </div>
+                                <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
+                                    <div class="text-muted small mb-1">Smart Home</div>
+                                    <h6 class="mb-2 fw-bold text-truncate"><a href="#"
+                                            class="text-dark text-decoration-none">Smart Speaker Hub</a></h6>
+                                    <h5 class="mb-3 fw-bold text-primary">$99.99</h5>
+                                    <button
+                                        class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                            class="bi bi-cart-plus me-2"></i> Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .group-hover:hover .action-buttons {
+            opacity: 1 !important;
+            transform: translateX(0) !important;
+        }
+
+        .hover-primary:hover {
+            color: var(--primary-color) !important;
+            border-color: var(--primary-color) !important;
+        }
+
+        .add-to-cart-btn {
+            transition: all 0.3s ease;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .mix-blend-multiply {
+            mix-blend-mode: multiply;
+        }
+    </style>
+    </div>
+    </div>
+    </div>
+
+    <!-- Controls via Indicators for a cleaner look -->
+    <div class="carousel-indicators" style="bottom: -20px;">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+            class="active bg-primary rounded-circle" style="width: 12px; height: 12px;" aria-current="true"
+            aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+            class="bg-primary rounded-circle" style="width: 12px; height: 12px;" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+            class="bg-primary rounded-circle" style="width: 12px; height: 12px;" aria-label="Slide 3"></button>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- 6. Promotional Banner -->
+    <section class="section-padding position-relative overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat; transform: scale(1.05);">
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: linear-gradient(135deg, rgba(79, 70, 229, 0.95) 0%, rgba(225, 29, 72, 0.85) 100%);">
+        </div>
+
+        <div class="container position-relative z-1 py-5">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-white text-dark px-3 py-2 mb-4 text-uppercase fw-bold rounded-pill shadow-sm"
+                        style="letter-spacing: 2px;">Special Offer</span>
+                    <h2 class="display-4 fw-bold mb-4 text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+                        Ready for Exclusive Deals?</h2>
+                    <p class="lead mb-5 mx-auto text-light" style="max-width: 600px;">Subscribe to our newsletter and
+                        get <strong class="text-white">20% off</strong> your first purchase. We don't spam, promise!</p>
+
+                    <form class="d-flex justify-content-center mx-auto bg-white p-2 rounded-pill shadow-lg"
+                        style="max-width: 550px;">
+                        <input type="email" class="form-control border-0 px-4 bg-transparent shadow-none"
+                            placeholder="Enter your email address" required style="color: var(--text-color);">
+                        <button type="submit" class="btn btn-dark rounded-pill px-4 py-2 shadow-sm"
+                            style="font-weight: 600;">Subscribe</button>
+                    </form>
+                </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand mb-3 d-flex align-items-center gap-2" href="Home1.html">
+                        <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="48"
+                            style="object-fit: contain;">
+                        <span class="fw-bolder fs-2 text-gradient">WanderLuxe</span>
+                    </a>
+                    <p class="text-muted pe-md-4 mb-4">Your premier one-stop shop for modern, premium, and affordable
+                        products online. Innovating the shopping experience.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Column 2: Company -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Vision</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Support -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-links mb-4">
+                        <li class="d-flex gap-2 text-muted"><i class="bi bi-geo-alt"></i> 123 E-commerce St, NY 10001,
+                            USA</li>
+                        <li class="d-flex gap-2 text-muted"><i class="bi bi-envelope"></i> contact@WanderLuxe.com</li>
+                        <li class="d-flex gap-2 text-muted"><i class="bi bi-telephone"></i> +1 (800) 123-4567</li>
+                    </ul>
+                    <p class="text-muted small">We accept multiple secure payment methods.</p>
+                    <div class="d-flex gap-2 fs-4 text-muted">
+                        <i class="bi bi-credit-card"></i>
+                        <i class="bi bi-paypal"></i>
+                        <i class="bi bi-stripe"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 WanderLuxe. All rights reserved.</p>
+                <div>
+                    Designed directly for your ease.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div style="position: fixed; bottom: 30px; right: 30px; z-index: 999;">
+        <button class="back-to-top shadow" aria-label="Back to Top" style="opacity: 0; visibility: hidden;">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Offcanvas Cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">Your Cart (3)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <!-- Cart Items -->
+            <div class="flex-grow-1 overflow-y-auto pe-2 mt-2">
+                <!-- Item 1 -->
+                <div class="d-flex gap-3 mb-3 border-bottom pb-3">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=100&q=80"
+                        alt="Product" class="rounded object-fit-cover shadow-sm" width="70" height="70">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-1 text-truncate" style="max-width: 150px;">Smart Watch Series 7</h6>
+                        <div class="text-muted small mb-2">Color: Black</div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$299.00</span>
+                            <div class="input-group input-group-sm" style="width: 80px;">
+                                <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                                <input type="text" class="form-control text-center px-1" value="1">
+                                <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="d-flex gap-3 mb-3 border-bottom pb-3">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=100&q=80"
+                        alt="Product" class="rounded object-fit-cover shadow-sm" width="70" height="70">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-1 text-truncate" style="max-width: 150px;">Wireless Headphones</h6>
+                        <div class="text-muted small mb-2">Color: White</div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$149.50</span>
+                            <div class="input-group input-group-sm" style="width: 80px;">
+                                <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                                <input type="text" class="form-control text-center px-1" value="2">
+                                <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Footer -->
+            <div class="mt-3 pt-3 border-top">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="fw-bold fs-5">Subtotal:</span>
+                    <span class="fw-bold fs-5 text-primary">$598.00</span>
+                </div>
+                <p class="text-muted small mb-3">Shipping and taxes calculated at checkout.</p>
+                <div class="d-flex flex-column gap-2">
+                    <a href="cart.html" class="btn btn-outline-primary py-2 fw-bold w-100 mb-1">View Full Cart</a>
+                    <a href="checkout.html" class="btn-custom py-2 w-100 justify-content-center">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <button type="button"
+                    class="btn-close position-absolute top-0 end-0 m-3 z-3 bg-white p-2 rounded-circle shadow-sm"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row g-0 h-100">
+                    <div class="col-md-6 bg-light d-flex align-items-center justify-content-center p-4">
+                        <img src="" alt="Product" class="modal-img img-fluid drop-shadow"
+                            style="max-height: 400px; object-fit: contain;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="modal-body p-4 p-lg-5 d-flex flex-column justify-content-center h-100">
+                            <span class="badge bg-dark px-2 py-1 mb-2 d-table small text-uppercase fw-bold"
+                                style="letter-spacing: 1px;">Selected</span>
+                            <h3 class="modal-title fw-bold mb-2 text-dark">Product Title</h3>
+                            <div class="text-warning small mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-half"></i>
+                                <span class="text-muted ms-1">(120 Reviews)</span>
+                            </div>
+                            <h4 class="modal-price fw-bold text-primary mb-4">$0.00</h4>
+                            <p class="text-dark mb-4" style="opacity: 0.8; font-size: 0.95rem;">Experience premium
+                                quality and exceptional design. This product is meticulously crafted with attention to
+                                detail to ensure maximum satisfaction.</p>
+
+                            <div class="d-flex align-items-center gap-3 mb-4 rounded-pill border p-2 bg-light">
+                                <label class="fw-bold small mb-0 ps-3 text-dark">Quantity:</label>
+                                <input type="number" class="form-control border-0 bg-transparent text-center fw-bold"
+                                    value="1" min="1" max="10" style="width: 80px; box-shadow: none;">
+                            </div>
+
+                            <div class="d-flex gap-3 w-100 mt-auto">
+                                <button class="btn btn-primary flex-grow-1 fw-bold rounded-pill shadow hover-lift"><i
+                                        class="bi bi-cart-plus me-2"></i> Add to Cart</button>
+                                <button
+                                    class="btn btn-outline-dark rounded-circle hover-lift d-flex align-items-center justify-content-center text-dark"
+                                    style="width: 50px; height: 50px;"><i class="bi bi-heart fs-5"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

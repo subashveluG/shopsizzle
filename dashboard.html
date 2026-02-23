@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLuxe | Dashboard</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom">
+        <div class="container-fluid px-4">
+            <!-- Sidebar Toggle (Mobile) -->
+            <button class="btn btn-light d-lg-none me-2" id="sidebar-toggle">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand text-white fw-bold fs-4 d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="32" class="img-fluid bg-white rounded p-1"
+                    style="object-fit: contain;">
+                <span>WanderLuxe</span>
+            </a>
+
+            <div class="d-flex align-items-center gap-3 ms-auto">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="bi bi-moon-fill" style="pointer-events: none;"></i>
+                </button>
+
+                <!-- User Profile Dropdown -->
+                <div class="dropdown">
+                    <button
+                        class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center gap-2 rounded-pill"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://ui-avatars.com/api/?name=Admin+User&background=random" alt="Admin"
+                            class="rounded-circle" width="30">
+                        <span class="d-none d-sm-inline">Admin</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i> Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i> Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="login.html"><i
+                                    class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link active text-decoration-none"
+                        onclick="toggleDashboardSection(event, 'analytics')">
+                        <i class="bi bi-graph-up"></i> Analytics
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link text-decoration-none">
+                        <i class="bi bi-people"></i> Users
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link text-decoration-none">
+                        <i class="bi bi-cart-check"></i> Orders
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link text-decoration-none">
+                        <i class="bi bi-chat-dots"></i> Messages
+                        <span class="badge bg-danger ms-auto rounded-pill">3</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link text-decoration-none"
+                        onclick="toggleDashboardSection(event, 'services')">
+                        <i class="bi bi-briefcase"></i> Services
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link text-decoration-none"
+                        onclick="toggleDashboardSection(event, 'about')">
+                        <i class="bi bi-info-circle"></i> About
+                    </a>
+                </li>
+                <li class="sidebar-item mt-4">
+                    <a href="Home1.html" class="sidebar-link text-decoration-none mb-2"
+                        style="background-color: var(--border-color); color: var(--text-color);">
+                        <i class="bi bi-house"></i> Home 1
+                    </a>
+                    <a href="Home2.html" class="sidebar-link text-decoration-none"
+                        style="background-color: var(--border-color); color: var(--text-color);">
+                        <i class="bi bi-house"></i> Home 2
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <div id="analytics-section" class="dashboard-panel">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold mb-0">Overview Analytics</h2>
+                    <button class="btn border btn-sm bg-white"><i class="bi bi-download"></i> Export Report</button>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="row g-4 mb-4">
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="custom-card p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h6 class="text-muted mb-0">Total Revenue</h6>
+                                <div class="icon-box m-0" style="width: 40px; height: 40px;"><i
+                                        class="bi bi-currency-dollar"></i></div>
+                            </div>
+                            <h3 class="fw-bold mb-2">$45,231.89</h3>
+                            <p class="text-success small mb-0"><i class="bi bi-arrow-up-right"></i> +20.1% from last
+                                month
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="custom-card p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h6 class="text-muted mb-0">Total Orders</h6>
+                                <div class="icon-box m-0" style="width: 40px; height: 40px;"><i class="bi bi-bag"></i>
+                                </div>
+                            </div>
+                            <h3 class="fw-bold mb-2">1,245</h3>
+                            <p class="text-success small mb-0"><i class="bi bi-arrow-up-right"></i> +15.2% from last
+                                month
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="custom-card p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h6 class="text-muted mb-0">Active Users</h6>
+                                <div class="icon-box m-0" style="width: 40px; height: 40px;"><i
+                                        class="bi bi-people"></i>
+                                </div>
+                            </div>
+                            <h3 class="fw-bold mb-2">8,549</h3>
+                            <p class="text-danger small mb-0"><i class="bi bi-arrow-down-right"></i> -2.4% from last
+                                month
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="custom-card p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h6 class="text-muted mb-0">Conversion Rate</h6>
+                                <div class="icon-box m-0" style="width: 40px; height: 40px;"><i
+                                        class="bi bi-graph-up-arrow"></i></div>
+                            </div>
+                            <h3 class="fw-bold mb-2">3.45%</h3>
+                            <p class="text-success small mb-0"><i class="bi bi-arrow-up-right"></i> +1.2% from last
+                                month
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Orders Table -->
+                <div class="custom-card p-0 overflow-hidden">
+                    <div class="p-4 border-bottom border-color d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mb-0">Recent Orders</h5>
+                        <a href="#" class="text-decoration-none small">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0 text-color" style="color: var(--text-color);">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th class="py-3 px-4 text-muted small fw-bold border-0">Order ID</th>
+                                    <th class="py-3 px-4 text-muted small fw-bold border-0">Customer</th>
+                                    <th class="py-3 px-4 text-muted small fw-bold border-0">Date</th>
+                                    <th class="py-3 px-4 text-muted small fw-bold border-0">Amount</th>
+                                    <th class="py-3 px-4 text-muted small fw-bold border-0">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-3 px-4 fw-bold">#ORD-001</td>
+                                    <td class="py-3 px-4">Michael Scott</td>
+                                    <td class="py-3 px-4 text-muted">Oct 24, 2026</td>
+                                    <td class="py-3 px-4 fw-bold">$234.00</td>
+                                    <td class="py-3 px-4"><span
+                                            class="badge bg-success rounded-pill px-3">Completed</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 fw-bold">#ORD-002</td>
+                                    <td class="py-3 px-4">Jim Halpert</td>
+                                    <td class="py-3 px-4 text-muted">Oct 23, 2026</td>
+                                    <td class="py-3 px-4 fw-bold">$125.50</td>
+                                    <td class="py-3 px-4"><span
+                                            class="badge bg-warning rounded-pill px-3 text-dark">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 fw-bold">#ORD-003</td>
+                                    <td class="py-3 px-4">Pam Beesly</td>
+                                    <td class="py-3 px-4 text-muted">Oct 22, 2026</td>
+                                    <td class="py-3 px-4 fw-bold">$89.99</td>
+                                    <td class="py-3 px-4"><span
+                                            class="badge bg-primary rounded-pill px-3">Shipped</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 fw-bold">#ORD-004</td>
+                                    <td class="py-3 px-4">Dwight Schrute</td>
+                                    <td class="py-3 px-4 text-muted">Oct 21, 2026</td>
+                                    <td class="py-3 px-4 fw-bold">$450.00</td>
+                                    <td class="py-3 px-4"><span
+                                            class="badge bg-danger rounded-pill px-3">Cancelled</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services-section" class="dashboard-panel d-none">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold mb-0">Services</h2>
+                    <button class="btn btn-primary btn-sm"><i class="bi bi-plus-lg me-1"></i> Add Service</button>
+                </div>
+                <div class="custom-card p-4">
+                    <h5 class="fw-bold mb-3">Active Services</h5>
+                    <p class="text-muted mb-0">Manage platform capabilities and user offerings here.</p>
+                </div>
+            </div>
+
+            <div id="about-section" class="dashboard-panel d-none">
+                <h2 class="fw-bold mb-4">About WanderLuxe</h2>
+                <div class="custom-card p-4">
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="icon-box m-0 bg-white text-primary fs-3 d-flex align-items-center justify-content-center"
+                            style="width: 60px; height: 60px; border-radius: 12px; box-shadow: var(--shadow-sm);">
+                            <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="40"
+                                style="object-fit: contain;">
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-1">WanderLuxe Dashboard</h4>
+                            <span class="badge bg-light text-dark border">Version 1.0.0</span>
+                        </div>
+                    </div>
+                    <h5 class="fw-bold">Platform Overview</h5>
+                    <p class="text-muted">Welcome to the WanderLuxe management dashboard. This platform provides
+                        comprehensive tools to manage your e-commerce platform, including analytics tracking, user
+                        management, order processing, and more.</p>
+                    <hr class="my-4">
+                    <h5 class="fw-bold">Our Mission</h5>
+                    <p class="text-muted mb-0">To empower businesses with cutting-edge technology, beautiful design, and
+                        seamless user experiences.</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleDashboardSection(event, sectionId) {
+            if (event) event.preventDefault();
+
+            // Hide all panels
+            document.querySelectorAll('.dashboard-panel').forEach(panel => {
+                panel.classList.add('d-none');
+            });
+
+            // Show target panel
+            const targetPanel = document.getElementById(sectionId + '-section');
+            if (targetPanel) {
+                targetPanel.classList.remove('d-none');
+            }
+
+            // Update active state in sidebar
+            if (event) {
+                document.querySelectorAll('.sidebar-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                event.currentTarget.classList.add('active');
+            }
+        }
+    </script>
+</body>
+
+</html>

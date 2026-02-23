@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLuxe | Welcome Home</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top glass-panel flex-column p-0">
+        <!-- Top Announcement Bar -->
+        <div class="w-100 bg-dark text-white text-center py-2 small fw-bold">
+            Free shipping on orders over $50! <a href="#" class="text-warning text-decoration-underline ms-2">Shop
+                Now</a>
+        </div>
+        <!-- Main Navbar -->
+        <div class="container py-3 align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand me-4 d-flex align-items-center gap-2" href="Home1.html">
+                <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="38"
+                    style="object-fit: contain;">
+                <span class="fw-bolder fs-4 text-gradient">WanderLuxe</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Context -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="Home1.html">Home 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="Home2.html">Home 2</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" id="shopDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu p-4 border-0 shadow-xl rounded-4 mt-3" aria-labelledby="shopDropdown"
+                            style="min-width: 300px;">
+                            <li>
+                                <h6 class="dropdown-header text-primary fw-bold mb-2">Shop Categories</h6>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-3 py-2 rounded category-hover"
+                                    href="category.html">
+                                    <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                        alt="Electronics" class="rounded shadow-sm object-fit-cover"
+                                        style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-dark">Electronics</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-3 py-2 rounded category-hover"
+                                    href="category.html">
+                                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                        alt="Fashion" class="rounded shadow-sm object-fit-cover"
+                                        style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-dark">Fashion</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-3 py-2 rounded category-hover"
+                                    href="category.html">
+                                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                        alt="Home & Living" class="rounded shadow-sm object-fit-cover"
+                                        style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-dark">Home & Living</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider my-2">
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 fw-bold text-danger d-flex align-items-center gap-2 rounded category-hover"
+                                    href="#">
+                                    <i class="bi bi-percent fs-5"></i> Special Offers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="about.html">About</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <!-- Search Bar -->
+                    <form class="position-relative d-none d-lg-block me-2" style="width: 280px;">
+                        <input class="form-control rounded-pill pe-5 bg-light border-0 py-2" type="search"
+                            placeholder="Search products, brands..." aria-label="Search">
+                        <button class="btn position-absolute top-50 end-0 translate-middle-y text-muted border-0"
+                            type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="bi bi-moon-fill" style="pointer-events: none;"></i>
+                    </button>
+
+                    <!-- Cart -->
+                    <a href="#" class="position-relative me-3 text-decoration-none shadow-sm p-2 rounded-circle border"
+                        style="color: var(--text-color);" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"
+                        aria-controls="cartOffcanvas">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 0.65rem;">
+                            3
+                        </span>
+                    </a>
+
+                    <!-- Auth Dropdown -->
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-decoration-none" id="userDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm"
+                                style="width: 38px; height: 38px; border: 2px solid white;">
+                                U
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg rounded-4 mt-2"
+                            aria-labelledby="userDropdown">
+                            <li>
+                                <h6 class="dropdown-header fw-bold">My Account</h6>
+                            </li>
+                            <li><a class="dropdown-item py-2" href="login.html"><i
+                                        class="bi bi-box-arrow-in-right me-2"></i> Login</a></li>
+                            <li><a class="dropdown-item py-2" href="signup.html"><i class="bi bi-person-plus me-2"></i>
+                                    Sign Up</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="dashboard.html"><i
+                                        class="bi bi-speedometer2 me-2"></i> Dashboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Sophisticated Collage Hero Section -->
+    <section class="hero-section position-relative overflow-hidden"
+        style="background-color: #f8fafc; padding: 6rem 0; min-height: 90vh; display: flex; align-items: center;">
+        <!-- Decorative bg elements -->
+        <div class="position-absolute top-0 end-0 p-5 z-0 opacity-25">
+            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="var(--primary-color)"
+                    d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18,95.4,-3.2C94,11.6,85.2,25.6,74.6,37.3C64,49,51.6,58.4,38.1,65.3C24.6,72.2,10.1,76.6,-5,83.1C-20.1,89.6,-35.8,98.2,-50,95.3C-64.2,92.4,-76.9,78,-84.9,62.2C-92.9,46.4,-96.2,29.2,-95.1,12.7C-94,-3.8,-88.4,-19.6,-80,-33.8C-71.6,-48,-60.4,-60.6,-46.8,-68.2C-33.2,-75.8,-17.2,-78.4,-1.1,-76.8C15,-75.2,30.6,-83.6,44.7,-76.4Z"
+                    transform="translate(100 100) scale(1.1)" />
+            </svg>
+        </div>
+
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start pe-lg-5">
+                    <span class="badge bg-dark px-3 py-2 mb-4 text-uppercase fw-bold rounded-pill shadow-sm"
+                        style="letter-spacing: 2px;">Vogue Edition 2026</span>
+                    <h1 class="display-3 fw-bold mb-4" style="color: var(--tertiary-color); line-height: 1.1;">Curate
+                        Your <br><span style="color: var(--primary-color);">Aesthetics</span></h1>
+                    <p class="lead text-muted mb-5 fs-4">Explore our most avant-garde collection yet. Immerse yourself
+                        in premium textures, bold silhouettes, and uncompromised quality.</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="#"
+                            class="btn btn-primary btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg hover-lift">Shop
+                            Editorial</a>
+                        <a href="#"
+                            class="btn btn-outline-dark btn-lg px-5 py-3 fw-bold rounded-pill hover-lift backdrop-blur d-flex align-items-center gap-2"><i
+                                class="bi bi-play-circle-fill fs-5"></i> Watch Film</a>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-4 mt-5 pt-4 border-top">
+                        <div class="text-center text-lg-start">
+                            <h3 class="fw-bold text-dark m-0">15k<span class="text-primary">+</span></h3>
+                            <small class="text-muted text-uppercase fw-bold"
+                                style="letter-spacing: 1px;">Products</small>
+                        </div>
+                        <div class="text-center text-lg-start border-start ps-4">
+                            <h3 class="fw-bold text-dark m-0">2.5m<span class="text-primary">+</span></h3>
+                            <small class="text-muted text-uppercase fw-bold"
+                                style="letter-spacing: 1px;">Customers</small>
+                        </div>
+                        <div class="text-center text-lg-start border-start ps-4">
+                            <h3 class="fw-bold text-dark m-0">4.9</h3>
+                            <div class="text-warning small"><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collage Image Grid -->
+                <div class="col-lg-7">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-6">
+                            <div class="d-flex flex-column gap-3">
+                                <div class="rounded-4 overflow-hidden shadow-lg position-relative group-hover"
+                                    style="height: 350px;">
+                                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Fashion 1" class="img-fluid w-100 h-100 object-fit-cover"
+                                        style="transition: transform 0.8s ease;">
+                                    <style>
+                                        .group-hover:hover img {
+                                            transform: scale(1.08);
+                                        }
+                                    </style>
+                                </div>
+                                <div class="rounded-4 overflow-hidden shadow-lg position-relative group-hover"
+                                    style="height: 250px;">
+                                    <img src="https://images.unsplash.com/photo-1485230405346-71acb9518d9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Fashion 2" class="img-fluid w-100 h-100 object-fit-cover"
+                                        style="transition: transform 0.8s ease;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="rounded-4 overflow-hidden shadow-lg position-relative group-hover"
+                                style="height: 620px;">
+                                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Fashion 3" class="img-fluid w-100 h-100 object-fit-cover"
+                                    style="transition: transform 0.8s ease;">
+                                <!-- Overlay Badge -->
+                                <div
+                                    class="position-absolute bottom-0 start-0 m-4 p-3 bg-white bg-opacity-75 backdrop-blur rounded-4 shadow-sm border border-white z-2">
+                                    <h6 class="m-0 fw-bold text-dark"><i
+                                            class="bi bi-stars text-primary me-2"></i>Trending Now</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. New Arrivals (Alternative to Categories) -->
+    <section class="section-padding" style="background-color: var(--card-bg);">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div class="section-title text-start mb-0">
+                    <h2>New Arrivals</h2>
+                    <p class="mb-0">Just landed! Be the first to grab these fresh drops.</p>
+                </div>
+                <a href="#" class="btn btn-outline-primary rounded-pill d-none d-md-inline-block">See All Fresh
+                    Items</a>
+            </div>
+            <div class="row g-4 pt-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-0 overflow-hidden text-center">
+                        <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="New Arrival" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                        <div class="p-4">
+                            <h5 class="fw-bold">Designer T-Shirts</h5>
+                            <p class="text-primary fw-bold">$45.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card p-0 overflow-hidden text-center">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="New Arrival" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                        <div class="p-4">
+                            <h5 class="fw-bold">Casual Comfort Fit</h5>
+                            <p class="text-primary fw-bold">$39.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                    <div class="custom-card p-0 overflow-hidden text-center">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="New Arrival" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                        <div class="p-4">
+                            <h5 class="fw-bold">Classic Basic Tee</h5>
+                            <p class="text-primary fw-bold">$29.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Deal of the Week (Flash Sale) -->
+    <section class="section-padding" style="background-color: var(--primary-color);">
+        <div class="container text-white">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                    <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Sale Item" class="img-fluid rounded shadow" style="max-height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2">Hurry Up!</span>
+                    <h2 class="display-5 fw-bold text-white mb-3">Deal of the Week</h2>
+                    <h4 class="mb-4">Sony PlayStation 5 Console <br> <span
+                            class="text-decoration-line-through text-white-50 fs-5">$699.00</span> <span
+                            class="text-warning">$499.00</span></h4>
+                    <p class="mb-5 text-white-50 text-wrap">Experience lightning-fast loading with an ultra-high speed
+                        SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio.</p>
+                    <div class="d-flex gap-3 mb-5">
+                        <div class="bg-white text-dark p-3 rounded text-center" style="min-width: 80px;">
+                            <h3 class="mb-0 fw-bold">12</h3>
+                            <small class="text-muted text-uppercase">Hours</small>
+                        </div>
+                        <div class="bg-white text-dark p-3 rounded text-center" style="min-width: 80px;">
+                            <h3 class="mb-0 fw-bold">45</h3>
+                            <small class="text-muted text-uppercase">Mins</small>
+                        </div>
+                        <div class="bg-white text-dark p-3 rounded text-center" style="min-width: 80px;">
+                            <h3 class="mb-0 fw-bold">10</h3>
+                            <small class="text-muted text-uppercase">Secs</small>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-light btn-lg text-primary fw-bold"><i class="bi bi-cart-plus"></i> Add to
+                        Cart Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Our Partner Brands -->
+    <section class="section-padding bg-white" style="background-color: var(--bg-color) !important;">
+        <div class="container">
+            <div class="section-title mb-5">
+                <h2>Trusted by Global Brands</h2>
+                <p>We source authentic products directly from the world's most renowned manufacturers.</p>
+            </div>
+            <div class="row g-4 justify-content-center text-center opacity-75">
+                <div class="col-4 col-md-2">
+                    <i class="bi bi-apple fs-1 text-secondary"></i>
+                    <p class="small fw-bold mt-2">Apple</p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <i class="bi bi-speaker fs-1 text-secondary"></i>
+                    <p class="small fw-bold mt-2">Bose</p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <i class="bi bi-tv fs-1 text-secondary"></i>
+                    <p class="small fw-bold mt-2">Samsung</p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <i class="bi bi-controller fs-1 text-secondary"></i>
+                    <p class="small fw-bold mt-2">Sony</p>
+                </div>
+                <div class="col-4 col-md-2">
+                    <i class="bi bi-smartwatch fs-1 text-secondary"></i>
+                    <p class="small fw-bold mt-2">Garmin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Latest News / Blog -->
+    <section class="section-padding" style="background-color: var(--card-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Read Our Blog</h2>
+                <p>Stay updated with the latest shopping tips, trend guides, and buying advice.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="custom-card p-0 d-flex flex-row overflow-hidden shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                            alt="Blog" style="width: 40%; object-fit: cover;">
+                        <div class="p-4 d-flex flex-column justify-content-center">
+                            <span class="text-primary small fw-bold mb-2">Fashion Week</span>
+                            <h5 class="fw-bold">How to style your basics in 2026 for a premium look</h5>
+                            <a href="#" class="mt-3 text-decoration-none fw-bold small">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="custom-card p-0 d-flex flex-row overflow-hidden shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                            alt="Blog" style="width: 40%; object-fit: cover;">
+                        <div class="p-4 d-flex flex-column justify-content-center">
+                            <span class="text-primary small fw-bold mb-2">Tech Insights</span>
+                            <h5 class="fw-bold">Top 5 gadgets you actually need to improve productivity</h5>
+                            <a href="#" class="mt-3 text-decoration-none fw-bold small">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Newsletter Split Focus -->
+    <section class="section-padding border-top" style="background-color: var(--bg-color);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="fw-bold">Don't Miss Out!</h2>
+                    <p class="text-muted mb-0">Join 50,000+ subscribers and get 15% off your first order today.</p>
+                </div>
+                <div class="col-md-6">
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control py-3 rounded text-dark" placeholder="Email Address"
+                            required>
+                        <button type="submit" class="btn-custom py-3 px-4 rounded">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand mb-3 d-flex align-items-center gap-2" href="Home1.html">
+                        <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="48"
+                            style="object-fit: contain;">
+                        <span class="fw-bolder fs-2 text-gradient">WanderLuxe</span>
+                    </a>
+                    <p class="text-muted pe-md-4 mb-4">Your premier one-stop shop for modern, premium, and affordable
+                        products online. Innovating the shopping experience.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Column 2: Company -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Vision</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Support -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-links mb-4">
+                        <li class="d-flex gap-2 text-muted"><i class="bi bi-geo-alt"></i> 123 E-commerce St, NY 10001,
+                            USA</li>
+                        <li class="d-flex gap-2 text-muted"><i class="bi bi-envelope"></i> contact@WanderLuxe.com</li>
+                        <li class="d-flex gap-2 text-muted"><i class="bi bi-telephone"></i> +1 (800) 123-4567</li>
+                    </ul>
+                    <p class="text-muted small">We accept multiple secure payment methods.</p>
+                    <div class="d-flex gap-2 fs-4 text-muted">
+                        <i class="bi bi-credit-card"></i>
+                        <i class="bi bi-paypal"></i>
+                        <i class="bi bi-stripe"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 WanderLuxe. All rights reserved.</p>
+                <div>
+                    Designed directly for your ease.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div style="position: fixed; bottom: 30px; right: 30px; z-index: 999;">
+        <button class="back-to-top shadow" aria-label="Back to Top" style="opacity: 0; visibility: hidden;">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Offcanvas Cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">Your Cart (3)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <!-- Cart Items -->
+            <div class="flex-grow-1 overflow-y-auto pe-2 mt-2">
+                <!-- Item 1 -->
+                <div class="d-flex gap-3 mb-3 border-bottom pb-3">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=100&q=80"
+                        alt="Product" class="rounded object-fit-cover shadow-sm" width="70" height="70">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-1 text-truncate" style="max-width: 150px;">Smart Watch Series 7</h6>
+                        <div class="text-muted small mb-2">Color: Black</div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$299.00</span>
+                            <div class="input-group input-group-sm" style="width: 80px;">
+                                <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                                <input type="text" class="form-control text-center px-1" value="1">
+                                <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="d-flex gap-3 mb-3 border-bottom pb-3">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=100&q=80"
+                        alt="Product" class="rounded object-fit-cover shadow-sm" width="70" height="70">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-1 text-truncate" style="max-width: 150px;">Wireless Headphones</h6>
+                        <div class="text-muted small mb-2">Color: White</div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$149.50</span>
+                            <div class="input-group input-group-sm" style="width: 80px;">
+                                <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                                <input type="text" class="form-control text-center px-1" value="2">
+                                <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Footer -->
+            <div class="mt-3 pt-3 border-top">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="fw-bold fs-5">Subtotal:</span>
+                    <span class="fw-bold fs-5 text-primary">$598.00</span>
+                </div>
+                <p class="text-muted small mb-3">Shipping and taxes calculated at checkout.</p>
+                <div class="d-flex flex-column gap-2">
+                    <a href="cart.html" class="btn btn-outline-primary py-2 fw-bold w-100 mb-1">View Full Cart</a>
+                    <a href="checkout.html" class="btn-custom py-2 w-100 justify-content-center">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <button type="button"
+                    class="btn-close position-absolute top-0 end-0 m-3 z-3 bg-white p-2 rounded-circle shadow-sm"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row g-0 h-100">
+                    <div class="col-md-6 bg-light d-flex align-items-center justify-content-center p-4">
+                        <img src="" alt="Product" class="modal-img img-fluid drop-shadow"
+                            style="max-height: 400px; object-fit: contain;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="modal-body p-4 p-lg-5 d-flex flex-column justify-content-center h-100">
+                            <span class="badge bg-dark px-2 py-1 mb-2 d-table small text-uppercase fw-bold"
+                                style="letter-spacing: 1px;">Selected</span>
+                            <h3 class="modal-title fw-bold mb-2 text-dark">Product Title</h3>
+                            <div class="text-warning small mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-half"></i>
+                                <span class="text-muted ms-1">(120 Reviews)</span>
+                            </div>
+                            <h4 class="modal-price fw-bold text-primary mb-4">$0.00</h4>
+                            <p class="text-dark mb-4" style="opacity: 0.8; font-size: 0.95rem;">Experience premium
+                                quality and exceptional design. This product is meticulously crafted with attention to
+                                detail to ensure maximum satisfaction.</p>
+
+                            <div class="d-flex align-items-center gap-3 mb-4 rounded-pill border p-2 bg-light">
+                                <label class="fw-bold small mb-0 ps-3 text-dark">Quantity:</label>
+                                <input type="number" class="form-control border-0 bg-transparent text-center fw-bold"
+                                    value="1" min="1" max="10" style="width: 80px; box-shadow: none;">
+                            </div>
+
+                            <div class="d-flex gap-3 w-100 mt-auto">
+                                <button class="btn btn-primary flex-grow-1 fw-bold rounded-pill shadow hover-lift"><i
+                                        class="bi bi-cart-plus me-2"></i> Add to Cart</button>
+                                <button
+                                    class="btn btn-outline-dark rounded-circle hover-lift d-flex align-items-center justify-content-center text-dark"
+                                    style="width: 50px; height: 50px;"><i class="bi bi-heart fs-5"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
