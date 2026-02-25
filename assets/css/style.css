@@ -63,6 +63,32 @@
   color: var(--text-color) !important;
 }
 
+/* Ensure buttons with inherently light backgrounds retain dark text */
+[data-theme="dark"] .btn-light,
+[data-theme="dark"] .btn-light.text-dark,
+[data-theme="dark"] .btn-light .text-muted,
+[data-theme="dark"] .btn-light .text-secondary {
+  color: #0f172a !important;
+}
+
+/* Ensure outline-dark and dark buttons remain visible on dark backgrounds */
+[data-theme="dark"] .btn-outline-dark {
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+  background-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .btn-dark {
+  background-color: #1e293b !important;
+  /* Slightly lighter than card-bg */
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
 [data-theme="dark"] .border,
 [data-theme="dark"] .border-bottom,
 [data-theme="dark"] .border-top,
