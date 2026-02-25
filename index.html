@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -27,9 +27,9 @@
         <div class="container py-3 align-items-center">
             <!-- Logo -->
             <a class="navbar-brand me-4 d-flex align-items-center gap-2" href="Home1.html">
-                <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="38"
+                <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="42" class="brand-logo-img"
                     style="object-fit: contain;">
-                <span class="fw-bolder fs-4 text-gradient">WanderLuxe</span>
+                <span class="fw-bolder brand-text text-gradient">WanderLuxe</span>
             </a>
 
             <!-- Mobile Toggle -->
@@ -67,7 +67,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item d-flex align-items-center gap-3 py-2 rounded category-hover"
-                                    href="category.html">
+                                    href="category-fashion.html">
                                     <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
                                         alt="Fashion" class="rounded shadow-sm object-fit-cover"
                                         style="width: 45px; height: 45px;">
@@ -76,7 +76,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item d-flex align-items-center gap-3 py-2 rounded category-hover"
-                                    href="category.html">
+                                    href="category-home.html">
                                     <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
                                         alt="Home & Living" class="rounded shadow-sm object-fit-cover"
                                         style="width: 45px; height: 45px;">
@@ -175,17 +175,17 @@
             <div class="carousel-item active" style="height: 85vh; min-height: 600px;">
                 <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                     class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
-                <div class="carousel-caption d-flex flex-column justify-content-center align-items-start h-100 text-start"
-                    style="background: linear-gradient(90deg, rgba(15,23,42,0.9) 0%, rgba(15,23,42,0.4) 50%, rgba(0,0,0,0) 100%); top: 0; left: 0; right: 0; bottom: 0; padding-left: 10%;">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center"
+                    style="background: linear-gradient(90deg, rgba(15,23,42,0.9) 0%, rgba(15,23,42,0.4) 50%, rgba(0,0,0,0) 100%); top: 0; left: 0; right: 0; bottom: 0;">
                     <div class="container">
                         <span class="badge bg-primary px-3 py-2 mb-3 text-uppercase fw-bold rounded-pill shadow-sm"
                             style="letter-spacing: 2px;">New Collection</span>
                         <h1 class="display-3 fw-bold text-white mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
                             Discover <span>Next-Gen</span><br>Shopping Experience</h1>
-                        <p class="lead text-light mb-5 fs-4"
+                        <p class="lead text-light mb-5 fs-4 mx-auto"
                             style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Explore thousands of
                             premium products, unbeatable deals, and lightning-fast delivery.</p>
-                        <div class="d-flex gap-3">
+                        <div class="d-flex justify-content-center gap-3">
                             <a href="#"
                                 class="btn btn-primary btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg hover-lift">Shop
                                 Now</a>
@@ -217,14 +217,15 @@
             <div class="carousel-item" style="height: 85vh; min-height: 600px;">
                 <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                     class="d-block w-100 h-100 object-fit-cover" alt="Slide 3">
-                <div class="carousel-caption d-flex flex-column justify-content-center align-items-end h-100 text-end"
-                    style="background: linear-gradient(270deg, rgba(15,23,42,0.9) 0%, rgba(15,23,42,0.4) 50%, rgba(0,0,0,0) 100%); top: 0; left: 0; right: 0; bottom: 0; padding-right: 10%;">
-                    <div class="container d-flex flex-column align-items-end">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center"
+                    style="background: rgba(15,23,42,0.6); top: 0; left: 0; right: 0; bottom: 0;">
+                    <div class="container d-flex flex-column align-items-center">
                         <span class="badge bg-danger px-3 py-2 mb-3 text-uppercase fw-bold rounded-pill shadow-sm"
                             style="letter-spacing: 2px;">Flash Sale</span>
                         <h1 class="display-3 fw-bold text-white mb-4">Up to <span class="text-danger">50%
                                 Off</span><br>Top Brands</h1>
-                        <p class="lead text-light mb-5 fs-4" style="max-width: 600px;">Hurry up! Grab your favorite
+                        <p class="lead text-light mb-5 fs-4 mx-auto" style="max-width: 600px;">Hurry up! Grab your
+                            favorite
                             products before the deal ends. Exceptional quality at unbeatable prices.</p>
                         <a href="#"
                             class="btn btn-danger btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg hover-lift">Grab the
@@ -355,17 +356,15 @@
                                 data-bs-toggle="tooltip" title="Compare"><i class="bi bi-arrow-left-right"></i></button>
                         </div>
 
-                        <!-- Image Container with Zoom -->
-                        <div class="image-zoom-container bg-light" style="height: 250px;">
+                        <div class="image-zoom-container" style="height: 250px;">
                             <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                                alt="Product"
-                                class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                alt="Product" class="img-fluid w-100 h-100 object-fit-contain pb-2 p-4">
                         </div>
 
                         <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
                             <div class="text-muted small mb-1">Electronics</div>
                             <h6 class="mb-2 fw-bold text-truncate"><a href="#"
-                                    class="text-dark text-decoration-none">Smart Watch Series 7</a></h6>
+                                    class="text-decoration-none text-reset">Smart Watch Series 7</a></h6>
                             <div class="d-flex text-warning small mb-3 opacity-75">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -376,7 +375,7 @@
                                 <span class="text-muted text-decoration-line-through small">$350.00</span>
                             </div>
                             <button
-                                class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                class="btn btn-primary w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn text-white"><i
                                     class="bi bi-cart-plus me-2"></i> Add to Cart</button>
                         </div>
                     </div>
@@ -397,16 +396,15 @@
                                 data-bs-toggle="tooltip" title="Compare"><i class="bi bi-arrow-left-right"></i></button>
                         </div>
 
-                        <div class="image-zoom-container bg-light" style="height: 250px;">
+                        <div class="image-zoom-container" style="height: 250px;">
                             <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                                alt="Product"
-                                class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                alt="Product" class="img-fluid w-100 h-100 object-fit-contain pb-2 p-4">
                         </div>
 
                         <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
                             <div class="text-muted small mb-1">Audio</div>
                             <h6 class="mb-2 fw-bold text-truncate"><a href="#"
-                                    class="text-dark text-decoration-none">Noise Cancelling Headphones</a></h6>
+                                    class="text-decoration-none text-reset">Noise Cancelling Headphones</a></h6>
                             <div class="d-flex text-warning small mb-3 opacity-75">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -414,7 +412,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold text-primary">$149.50</h5>
                             <button
-                                class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                class="btn btn-primary w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn text-white"><i
                                     class="bi bi-cart-plus me-2"></i> Add to Cart</button>
                         </div>
                     </div>
@@ -439,16 +437,15 @@
                                 data-bs-toggle="tooltip" title="Compare"><i class="bi bi-arrow-left-right"></i></button>
                         </div>
 
-                        <div class="image-zoom-container bg-light" style="height: 250px;">
+                        <div class="image-zoom-container" style="height: 250px;">
                             <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                                alt="Product"
-                                class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                alt="Product" class="img-fluid w-100 h-100 object-fit-contain pb-2 p-4">
                         </div>
 
                         <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
                             <div class="text-muted small mb-1">Footwear</div>
                             <h6 class="mb-2 fw-bold text-truncate"><a href="#"
-                                    class="text-dark text-decoration-none">Nike Air Max 270 Red</a></h6>
+                                    class="text-decoration-none text-reset">Nike Air Max 270 Red</a></h6>
                             <div class="d-flex text-warning small mb-3 opacity-75">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -456,7 +453,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold text-primary">$189.99</h5>
                             <button
-                                class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                class="btn btn-primary w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn text-white"><i
                                     class="bi bi-cart-plus me-2"></i> Add to Cart</button>
                         </div>
                     </div>
@@ -477,16 +474,15 @@
                                 data-bs-toggle="tooltip" title="Compare"><i class="bi bi-arrow-left-right"></i></button>
                         </div>
 
-                        <div class="image-zoom-container bg-light" style="height: 250px;">
+                        <div class="image-zoom-container" style="height: 250px;">
                             <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-                                alt="Product"
-                                class="img-fluid w-100 h-100 object-fit-contain mix-blend-multiply pb-2 p-4">
+                                alt="Product" class="img-fluid w-100 h-100 object-fit-contain pb-2 p-4">
                         </div>
 
                         <div class="p-4 d-flex flex-column" style="flex: 1; background: var(--card-bg);">
                             <div class="text-muted small mb-1">Accessories</div>
                             <h6 class="mb-2 fw-bold text-truncate"><a href="#"
-                                    class="text-dark text-decoration-none">Gaming Headset Pro V2</a></h6>
+                                    class="text-decoration-none text-reset">Gaming Headset Pro V2</a></h6>
                             <div class="d-flex text-warning small mb-3 opacity-75">
                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                     class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
@@ -494,7 +490,7 @@
                             </div>
                             <h5 class="mb-3 fw-bold text-primary">$79.00</h5>
                             <button
-                                class="btn btn-outline-dark w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn"><i
+                                class="btn btn-primary w-100 mt-auto fw-bold rounded-pill shadow-sm add-to-cart-btn text-white"><i
                                     class="bi bi-cart-plus me-2"></i> Add to Cart</button>
                         </div>
                     </div>
@@ -527,7 +523,7 @@
             box-shadow: var(--shadow-md);
         }
 
-        .mix-blend-multiply {
+        . {
             mix-blend-mode: multiply;
         }
     </style>
@@ -546,8 +542,9 @@
                     <ul class="nav nav-pills justify-content-lg-end justify-content-start gap-2 border-0"
                         id="collectionTabs" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active px-4 py-2 rounded-pill fw-bold shadow-sm" id="men-tab"
-                                data-bs-toggle="pill" data-bs-target="#men-col" type="button" role="tab"
+                            <button
+                                class="nav-link active px-4 py-2 rounded-pill fw-bold shadow-sm border border-transparent"
+                                id="men-tab" data-bs-toggle="pill" data-bs-target="#men-col" type="button" role="tab"
                                 aria-controls="men-col" aria-selected="true"
                                 style="transition: var(--transition);">Men's</button>
                         </li>
@@ -572,6 +569,11 @@
                         background-color: var(--card-bg) !important;
                         border-color: var(--border-color) !important;
                         color: var(--primary-color) !important;
+                    }
+
+                    #collectionTabs .nav-link.active {
+                        background-color: var(--primary-color) !important;
+                        color: white !important;
                     }
                 </style>
             </div>
@@ -606,8 +608,7 @@
                                     <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
                                         <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
                                             <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                                                alt="Product"
-                                                class="img-fluid w-100 h-100 object-fit-cover mix-blend-multiply">
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
                                         </div>
                                         <div>
                                             <h6 class="mb-1 text-truncate" style="max-width: 150px;">Leather Jacket</h6>
@@ -619,9 +620,8 @@
                                 <div class="col-sm-6">
                                     <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
                                         <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
-                                            <img src="https://images.unsplash.com/photo-1574315042735-a76c8c4f9bc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                                                alt="Product"
-                                                class="img-fluid w-100 h-100 object-fit-cover mix-blend-multiply">
+                                            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
                                         </div>
                                         <div>
                                             <h6 class="mb-1 text-truncate" style="max-width: 150px;">Classic Blue Jeans
@@ -635,8 +635,7 @@
                                     <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
                                         <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
                                             <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-                                                alt="Product"
-                                                class="img-fluid w-100 h-100 object-fit-cover mix-blend-multiply">
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
                                         </div>
                                         <div>
                                             <h6 class="mb-1 text-truncate" style="max-width: 150px;">Cotton T-Shirt</h6>
@@ -649,8 +648,8 @@
                                     <div class="custom-card p-3 d-flex gap-3 align-items-center h-100 bg-primary text-white border-primary shadow-lg"
                                         style="cursor: pointer;" onclick="location.href='#'">
                                         <div class="d-flex w-100 h-100 justify-content-center align-items-center gap-2">
-                                            <h5 class="m-0 fw-bold">View All</h5>
-                                            <i class="bi bi-arrow-right-circle fs-4"></i>
+                                            <h5 class="m-0 fw-bold text-white">View All</h5>
+                                            <i class="bi bi-arrow-right-circle fs-4 text-white"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -658,22 +657,170 @@
                         </div>
                     </div>
                 </div>
-                <!-- Women's Tab (Empty structure for layout demonstration) -->
+                <!-- Women's Tab -->
                 <div class="tab-pane fade" id="women-col" role="tabpanel" aria-labelledby="women-tab" tabindex="0">
-                    <div class="alert alert-light border shadow-sm p-5 text-center rounded-4">
-                        <i class="bi bi-box-seam fs-1 text-muted mb-3 d-block"></i>
-                        <h4 class="fw-bold">Women's Collection Loading...</h4>
-                        <p class="text-muted">Explore the latest trends in our upcoming drop.</p>
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-5">
+                            <div class="position-relative rounded-4 overflow-hidden shadow-lg h-100 w-100"
+                                style="min-height: 400px;">
+                                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Women Collection"
+                                    class="img-fluid w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <div class="position-relative z-1 p-5 d-flex flex-column justify-content-end h-100 w-100 text-white"
+                                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                    <h3 class="fw-bold fs-2 mb-2">Women's Fashion</h3>
+                                    <p class="mb-4 text-light">Discover the latest trends in our new women's collection.
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-light rounded-pill align-self-start fw-bold px-4 py-2 hover-lift">Shop
+                                        Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row g-3">
+                                <!-- Tab Product 1 -->
+                                <div class="col-sm-6">
+                                    <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
+                                        <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
+                                            <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1 text-truncate" style="max-width: 150px;">Summer Dress</h6>
+                                            <h6 class="text-primary fw-bold mb-0">$95.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tab Product 2 -->
+                                <div class="col-sm-6">
+                                    <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
+                                        <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
+                                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1 text-truncate" style="max-width: 150px;">Designer Handbag
+                                            </h6>
+                                            <h6 class="text-primary fw-bold mb-0">$150.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tab Product 3 -->
+                                <div class="col-sm-6">
+                                    <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
+                                        <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
+                                            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1 text-truncate" style="max-width: 150px;">High Heels</h6>
+                                            <h6 class="text-primary fw-bold mb-0">$89.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tab Product 4 -->
+                                <div class="col-sm-6">
+                                    <div class="custom-card p-3 d-flex gap-3 align-items-center h-100 bg-primary text-white border-primary shadow-lg"
+                                        style="cursor: pointer;" onclick="location.href='#'">
+                                        <div class="d-flex w-100 h-100 justify-content-center align-items-center gap-2">
+                                            <h5 class="m-0 fw-bold text-white">View All</h5>
+                                            <i class="bi bi-arrow-right-circle fs-4 text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Tech Tab -->
                 <div class="tab-pane fade" id="tech-col" role="tabpanel" aria-labelledby="tech-tab" tabindex="0">
-                    <div class="alert alert-light border shadow-sm p-5 text-center rounded-4">
-                        <i class="bi bi-laptop fs-1 text-muted mb-3 d-block"></i>
-                        <h4 class="fw-bold">Tech Collection Loading...</h4>
-                        <p class="text-muted">Top tier electronics incoming.</p>
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-5">
+                            <div class="position-relative rounded-4 overflow-hidden shadow-lg h-100 w-100"
+                                style="min-height: 400px;">
+                                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Tech Collection"
+                                    class="img-fluid w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                                <div class="position-relative z-1 p-5 d-flex flex-column justify-content-end h-100 w-100 text-white"
+                                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                    <h3 class="fw-bold fs-2 mb-2">Tech Gadgets</h3>
+                                    <p class="mb-4 text-light">Upgrade your lifestyle with top tier electronics.</p>
+                                    <a href="#"
+                                        class="btn btn-light rounded-pill align-self-start fw-bold px-4 py-2 hover-lift">Shop
+                                        Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row g-3">
+                                <!-- Tab Product 1 -->
+                                <div class="col-sm-6">
+                                    <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
+                                        <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
+                                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1 text-truncate" style="max-width: 150px;">Smart Watch</h6>
+                                            <h6 class="text-primary fw-bold mb-0">$199.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tab Product 2 -->
+                                <div class="col-sm-6">
+                                    <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
+                                        <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
+                                            <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1 text-truncate" style="max-width: 150px;">MacBook Pro</h6>
+                                            <h6 class="text-primary fw-bold mb-0">$1299.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tab Product 3 -->
+                                <div class="col-sm-6">
+                                    <div class="custom-card p-3 d-flex gap-3 align-items-center h-100">
+                                        <div class="bg-light rounded p-2" style="width: 80px; height: 80px;">
+                                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                                                alt="Product" class="img-fluid w-100 h-100 object-fit-cover">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-1 text-truncate" style="max-width: 150px;">Wireless Earbuds
+                                            </h6>
+                                            <h6 class="text-primary fw-bold mb-0">$149.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tab Product 4 -->
+                                <div class="col-sm-6">
+                                    <div class="custom-card p-3 d-flex gap-3 align-items-center h-100 bg-primary text-white border-primary shadow-lg"
+                                        style="cursor: pointer;" onclick="location.href='#'">
+                                        <div class="d-flex w-100 h-100 justify-content-center align-items-center gap-2">
+                                            <h5 class="m-0 fw-bold text-white">View All</h5>
+                                            <i class="bi bi-arrow-right-circle fs-4 text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev" style="width: 5%;">
+                    <span class="carousel-control-prev-icon rounded-circle bg-primary p-3 shadow-sm" aria-hidden="true"
+                        style="background-size: 50%;"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next" style="width: 5%;">
+                    <span class="carousel-control-next-icon rounded-circle bg-primary p-3 shadow-sm" aria-hidden="true"
+                        style="background-size: 50%;"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
@@ -896,24 +1043,24 @@
                 <!-- Column 1: Brand -->
                 <div class="col-lg-4 col-md-6">
                     <a class="navbar-brand mb-3 d-flex align-items-center gap-2" href="Home1.html">
-                        <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="48"
+                        <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="42" class="brand-logo-img"
                             style="object-fit: contain;">
-                        <span class="fw-bolder fs-2 text-gradient">WanderLuxe</span>
+                        <span class="fw-bolder brand-text text-gradient">WanderLuxe</span>
                     </a>
                     <p class="text-muted pe-md-4 mb-4">Your premier one-stop shop for modern, premium, and affordable
                         products online. Innovating the shopping experience.</p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 social-icons">
                         <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
-                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color); transition: all 0.3s ease;"><i
                                 class="bi bi-facebook"></i></a>
                         <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
-                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color); transition: all 0.3s ease;"><i
                                 class="bi bi-twitter-x"></i></a>
                         <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
-                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color); transition: all 0.3s ease;"><i
                                 class="bi bi-instagram"></i></a>
                         <a href="#" class="icon-box d-flex align-items-center justify-content-center rounded-circle"
-                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color);"><i
+                            style="width: 40px; height: 40px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color); transition: all 0.3s ease;"><i
                                 class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
@@ -1089,3 +1236,6 @@
 </body>
 
 </html>
+
+
+

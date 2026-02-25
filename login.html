@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -14,29 +14,40 @@
             position: relative;
             min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 120px 15px 40px;
         }
+
         .auth-bg {
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
             z-index: 0;
-            transform: scale(1.05); /* Slight scale to prevent edge bleed */
+            transform: scale(1.05);
+            /* Slight scale to prevent edge bleed */
         }
+
         .auth-overlay {
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(13, 148, 136, 0.6) 100%);
             z-index: 1;
         }
+
         .glass-auth-card {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 1.5rem;
+            margin: auto;
             position: relative;
             z-index: 2;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -44,11 +55,13 @@
             width: 100%;
             padding: 3rem;
         }
+
         [data-theme="dark"] .glass-auth-card {
             background: rgba(15, 23, 42, 0.85);
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: #fff;
         }
+
         .auth-navbar {
             position: absolute;
             top: 0;
@@ -56,26 +69,31 @@
             right: 0;
             z-index: 10;
         }
+
         .form-control-auth {
-            border: 2px solid rgba(0,0,0,0.1);
+            border: 2px solid rgba(0, 0, 0, 0.1);
             border-radius: 0.75rem;
             padding: 0.85rem 1rem 0.85rem 3rem;
-            background: rgba(255,255,255,0.8);
+            background: rgba(255, 255, 255, 0.8);
             transition: all 0.3s ease;
         }
+
         [data-theme="dark"] .form-control-auth {
-            background: rgba(0,0,0,0.4);
-            border: 2px solid rgba(255,255,255,0.1);
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.1);
             color: white;
         }
+
         .form-control-auth:focus {
             background: #fff;
             border-color: var(--primary-color);
             box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.15);
         }
+
         [data-theme="dark"] .form-control-auth:focus {
-            background: rgba(0,0,0,0.6);
+            background: rgba(0, 0, 0, 0.6);
         }
+
         .input-icon {
             position: absolute;
             left: 1rem;
@@ -84,11 +102,21 @@
             color: #64748b;
             z-index: 4;
         }
+
         .btn-auth {
             padding: 1rem;
             font-size: 1.1rem;
             border-radius: 0.75rem;
             font-weight: 700;
+        }
+
+        .glass-auth-card a {
+            transition: all 0.3s ease;
+        }
+
+        .glass-auth-card a:hover {
+            color: var(--secondary-color) !important;
+            text-decoration: underline !important;
         }
     </style>
 </head>
@@ -98,22 +126,27 @@
     <div class="auth-overlay"></div>
 
     <nav class="auth-navbar p-4">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand d-flex align-items-center gap-2 text-white text-decoration-none" href="index.html">
-                <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="40" style="object-fit: contain; filter: brightness(0) invert(1);">
-                <span class="fw-bolder fs-3 text-white" style="text-shadow: 0 2px 4px rgba(0,0,0,0.4);">WanderLuxe</span>
-            </a>
+        <div class="container d-flex justify-content-end align-items-center">
             <div class="d-flex align-items-center gap-3">
-                <button class="theme-toggle text-white border-0 bg-transparent fs-5" id="theme-toggle" aria-label="Toggle Theme">
+                <button class="theme-toggle text-white border-0 bg-transparent fs-5" id="theme-toggle"
+                    aria-label="Toggle Theme">
                     <i class="bi bi-moon-fill" style="pointer-events: none;"></i>
                 </button>
-                <a href="index.html" class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold hover-lift backdrop-blur"><i class="bi bi-arrow-left me-2"></i>Back to Home</a>
+                <a href="index.html"
+                    class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold hover-lift backdrop-blur">
+                    <i class="bi bi-arrow-left me-2"></i>Back to Home
+                </a>
             </div>
         </div>
     </nav>
 
     <div class="container d-flex justify-content-center">
         <div class="glass-auth-card reveal active">
+            <a class="navbar-brand d-flex align-items-center gap-2 mb-4" href="Home1.html">
+                <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="42" class="brand-logo-img"
+                    style="object-fit: contain;">
+                <span class="fw-bolder brand-text text-gradient">WanderLuxe</span>
+            </a>
             <div class="text-center mb-4 pb-2">
                 <h2 class="fw-bold mb-2">Welcome Back</h2>
                 <p class="text-muted">Enter your credentials to access your global itineraries.</p>
@@ -124,7 +157,8 @@
                     <label class="form-label fw-bold small text-uppercase">Email address</label>
                     <div class="position-relative">
                         <i class="bi bi-envelope input-icon"></i>
-                        <input type="email" class="form-control form-control-auth w-100" placeholder="name@example.com" required>
+                        <input type="email" class="form-control form-control-auth w-100" placeholder="name@example.com"
+                            required>
                     </div>
                 </div>
                 <div class="mb-4 position-relative">
@@ -134,31 +168,42 @@
                     </div>
                     <div class="position-relative">
                         <i class="bi bi-lock input-icon"></i>
-                        <input type="password" class="form-control form-control-auth w-100" placeholder="Enter your password" required>
+                        <input type="password" class="form-control form-control-auth w-100"
+                            placeholder="Enter your password" required>
                     </div>
                 </div>
                 <div class="mb-4 form-check">
                     <input type="checkbox" class="form-check-input border-secondary" id="rememberMe">
                     <label class="form-check-label small fw-medium" for="rememberMe">Remember me for 30 days</label>
                 </div>
-                <button type="submit" class="btn btn-custom btn-auth w-100 mb-4 shadow">Sign In to Dashboard <i class="bi bi-box-arrow-in-right ms-2"></i></button>
+                <button type="submit"
+                    class="btn btn-custom btn-auth w-100 mb-4 shadow d-flex justify-content-center align-items-center gap-2">Sign
+                    In <i class="bi bi-box-arrow-in-right"></i></button>
             </form>
 
             <div class="position-relative mb-4 text-center">
                 <hr class="text-muted opacity-50">
-                <span class="position-absolute top-50 start-50 translate-middle px-3 small fw-bold text-muted rounded-pill" style="background: rgba(255,255,255,0.8);">Or continue with</span>
+                <span
+                    class="position-absolute top-50 start-50 translate-middle px-3 small fw-bold text-muted rounded-pill"
+                    style="background: rgba(255,255,255,0.8);">Or continue with</span>
             </div>
 
             <div class="d-flex gap-3 mb-4">
-                <button type="button" class="btn btn-outline-dark w-100 py-2 rounded-3 fw-bold bg-white text-dark shadow-sm hover-lift"><i class="bi bi-google text-danger me-2"></i> Google</button>
-                <button type="button" class="btn btn-outline-dark w-100 py-2 rounded-3 fw-bold bg-white text-dark shadow-sm hover-lift"><i class="bi bi-facebook text-primary me-2"></i> Facebook</button>
+                <button type="button"
+                    class="btn btn-outline-dark w-100 py-2 rounded-3 fw-bold bg-white text-dark shadow-sm hover-lift"><i
+                        class="bi bi-google text-danger me-2"></i> Google</button>
+                <button type="button"
+                    class="btn btn-outline-dark w-100 py-2 rounded-3 fw-bold bg-white text-dark shadow-sm hover-lift"><i
+                        class="bi bi-facebook text-primary me-2"></i> Facebook</button>
             </div>
 
-            <p class="text-center mb-0 text-muted">Don't have an account? <a href="signup.html" class="fw-bold text-primary text-decoration-none">Create Account</a></p>
+            <p class="text-center mb-0 text-muted">Don't have an account? <a href="signup.html"
+                    class="fw-bold text-primary text-decoration-none">Create Account</a></p>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
