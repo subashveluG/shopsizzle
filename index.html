@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -522,10 +522,6 @@
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
         }
-
-        . {
-            mix-blend-mode: multiply;
-        }
     </style>
 
     <!-- Tabbed Categories Section -->
@@ -543,39 +539,24 @@
                         id="collectionTabs" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button
-                                class="nav-link active px-4 py-2 rounded-pill fw-bold shadow-sm border border-transparent"
+                                class="nav-link active px-4 py-2 rounded-pill fw-bold shadow-sm border border-transparent collection-tab-btn"
                                 id="men-tab" data-bs-toggle="pill" data-bs-target="#men-col" type="button" role="tab"
-                                aria-controls="men-col" aria-selected="true"
-                                style="transition: var(--transition);">Men's</button>
+                                aria-controls="men-col" aria-selected="true">Men's</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button
-                                class="nav-link px-4 py-2 rounded-pill fw-bold bg-white text-dark shadow-sm border border-transparent"
+                                class="nav-link px-4 py-2 rounded-pill fw-bold shadow-sm border border-transparent collection-tab-btn"
                                 id="women-tab" data-bs-toggle="pill" data-bs-target="#women-col" type="button"
-                                role="tab" aria-controls="women-col" aria-selected="false"
-                                style="transition: var(--transition);">Women's</button>
+                                role="tab" aria-controls="women-col" aria-selected="false">Women's</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button
-                                class="nav-link px-4 py-2 rounded-pill fw-bold bg-white text-dark shadow-sm border border-transparent"
+                                class="nav-link px-4 py-2 rounded-pill fw-bold shadow-sm border border-transparent collection-tab-btn"
                                 id="tech-tab" data-bs-toggle="pill" data-bs-target="#tech-col" type="button" role="tab"
-                                aria-controls="tech-col" aria-selected="false"
-                                style="transition: var(--transition);">Tech</button>
+                                aria-controls="tech-col" aria-selected="false">Tech</button>
                         </li>
                     </ul>
                 </div>
-                <style>
-                    #collectionTabs .nav-link:not(.active):hover {
-                        background-color: var(--card-bg) !important;
-                        border-color: var(--border-color) !important;
-                        color: var(--primary-color) !important;
-                    }
-
-                    #collectionTabs .nav-link.active {
-                        background-color: var(--primary-color) !important;
-                        color: white !important;
-                    }
-                </style>
             </div>
 
             <!-- Tab Content -->
@@ -1043,8 +1024,8 @@
                 <!-- Column 1: Brand -->
                 <div class="col-lg-4 col-md-6">
                     <a class="navbar-brand mb-3 d-flex align-items-center gap-2" href="Home1.html">
-                        <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="42" class="brand-logo-img"
-                            style="object-fit: contain;">
+                        <img src="assets/img/wanderluxe_logo.png" alt="WanderLuxe Logo" height="42"
+                            class="brand-logo-img" style="object-fit: contain;">
                         <span class="fw-bolder brand-text text-gradient">WanderLuxe</span>
                     </a>
                     <p class="text-muted pe-md-4 mb-4">Your premier one-stop shop for modern, premium, and affordable
@@ -1236,6 +1217,3 @@
 </body>
 
 </html>
-
-
-

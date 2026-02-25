@@ -609,6 +609,26 @@ a:hover {
   color: #fff;
 }
 
+/* Collection Tabs Standardization */
+.collection-tab-btn {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.collection-tab-btn:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.collection-tab-btn.active {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  border-color: var(--primary-color) !important;
+}
+
 /* Footer */
 .footer {
   background-color: var(--card-bg);
